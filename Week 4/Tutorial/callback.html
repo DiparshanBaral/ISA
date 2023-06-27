@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name</title>
+    <script>
+        var greeting = (name)=>{
+            alert("Hello "+ name)
+        }
+        var processorUserInput = (callback)=>{
+            setTimeout(()=>{
+                var name = prompt("Enter your name")
+                callback(name)
+            },5000);
+        }
+        processorUserInput(greeting)
+    </script>
+</head>
+<body>
+</body>
+</html>
