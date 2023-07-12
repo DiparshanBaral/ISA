@@ -1,3 +1,7 @@
+*{
+    background-color: antiquewhite;
+}
+
 h1{
     text-align: center;
     color: rgb(60, 92, 81);
@@ -12,12 +16,26 @@ h1{
     margin-right: 5px;
     border-radius: 21px;
     padding: 10px 150px 10px 30px;
-    background-color: antiquewhite;
+    background-color:rgb(143, 236, 205);
 }
 
 #search-button{
     border-radius: 21px;
     padding: 0 10px 0 10px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(148, 177, 156);
+    color: rgb(129, 62, 18);
+}
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.movie-row {
+    display: flex;
+    flex-basis: 100%;
+}
+
+.movie-wrapper {
+    flex: 0 0 calc(33.33% - 20px);
+    padding: 10px;
 }

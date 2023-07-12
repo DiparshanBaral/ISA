@@ -11,11 +11,10 @@
 <body>
     <h1>Search for Movies</h1>
     <div class="search">
-        <input type="text" id="search-input" placeholder="Search..">
-        <button type="submit" onclick="fetchData()" id="search-button"><i class="fa fa-search"></i></button>
+        <input type="text" id="search-input" placeholder="Search.." onkeydown="handleKeyDown(event)">
+        <button type="submit" onclick="handleClick()" id="search-button"><i class="fa fa-search"></i></button>
     </div>
-    <div class="movies-list">
-        <div id="movie1"></div>
+    <div id="container" class="movie-container">
     </div>
     
 </body>
